@@ -1,45 +1,85 @@
 const a = document.querySelector("#A");
-const b = document.querySelector("#B");
-const c = document.querySelector("#C");
+const s = document.querySelector("#S");
 const d = document.querySelector("#D");
-const e = document.querySelector("#E");
 const f = document.querySelector("#F");
 const g = document.querySelector("#G");
 const h = document.querySelector("#H");
+const j = document.querySelector("#J");
 const k = document.querySelector("#K");
 const l = document.querySelector("#L");
-const m = document.querySelector("#M");
-const n = document.querySelector("#N");
+const ı = document.querySelector("#I");
 const o = document.querySelector("#O");
+const e = document.querySelector("#E");
+const r = document.querySelector("#R");
+const white = document.querySelector(".key");
+document.q;
+console.log(white);
 
 window.addEventListener("keydown", (event) => {
-  if (event.key == "a") {
-    a.play();
-  } else if (event.key == "b") {
-    b.play();
-  } else if (event.key == "b") {
-    b.play();
-  } else if (event.key == "c") {
-    c.play();
-  } else if (event.key == "d") {
-    d.play();
-  } else if (event.key == "e") {
-    e.play();
-  } else if (event.key == "f") {
-    f.play();
-  } else if (event.key == "g") {
-    g.play();
-  } else if (event.key == "h") {
-    h.play();
-  } else if (event.key == "k") {
-    k.play();
-  } else if (event.key == "l") {
-    l.play();
-  } else if (event.key == "m") {
-    m.play();
-  } else if (event.key == "n") {
-    n.play();
-  } else if (event.key == "o") {
-    o.play();
+  let el = event.code;
+  let elCode = event.keyCode;
+
+  switch (el) {
+    case "KeyA": {
+      a.play();
+      white.classList.toggle("active");
+
+      console.log("ömer");
+      break;
+    }
+    case "KeyS": {
+      s.play();
+      white.classList.toggle("active");
+
+      console.log("ömer2");
+      break;
+    }
+    case "KeyD": {
+      d.play();
+
+      break;
+    }
+    case "KeyF": {
+      f.play();
+
+      break;
+    }
+    case "KeyG": {
+      g.play();
+      break;
+    }
+    case "KeyH": {
+      h.play();
+      break;
+    }
+    case "KeyJ": {
+      j.play();
+      break;
+    }
+    case "KeyK": {
+      k.play();
+
+      break;
+    }
+    case "KeyL": {
+      l.play();
+      break;
+    }
+    case "KeyI": {
+      ı.play();
+      break;
+    }
+    case "KeyO": {
+      o.play();
+      break;
+    }
+    case "KeyE": {
+      e.play();
+      break;
+    }
+    case "KeyR": {
+      r.play();
+      break;
+    }
   }
 });
