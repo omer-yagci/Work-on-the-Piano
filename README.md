@@ -4,7 +4,7 @@
 
 Users should be able to:
 -See hover states for all interactive elements on the page
--Press relevant keyboard buttons to play the drum kit
+-Press relevant keyboard buttons to play the Piano.
 
 
  🥳🥳 Hope you ENJOY 🥳🥳
