@@ -1,3 +1,21 @@
+function playSound(e) {
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+  if (!audio) return;
+  audio.currentTime = 0;
+  audio.play();
+  key.classList.add("active");
+}
+function stopEffect(e) {
+  const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+  if (!key) return;
+  key.classList.remove("active");
+}
+window.addEventListener("keydown", playSound);
+window.addEventListener("keyup", stopEffect);
+
+// THIS IS MY FIRST JS CODE BLOCK FOR PIANO
+/*
 const a = document.querySelector("#A");
 const s = document.querySelector("#S");
 const d = document.querySelector("#D");
@@ -113,3 +131,4 @@ window.addEventListener("keydown", (event) => {
     laSi.parentNode.classList.remove("active");
   }, 500);
 });
+*/
